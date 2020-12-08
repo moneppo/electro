@@ -1,8 +1,112 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>moneppo</title>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: 'Josefin';
+        font-style: normal;
+        font-weight: normal;
+        src: 
+          local(''),
+          url('./JosefinSans-VariableFont_wght.ttf') format('woff');
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Josefin', 'Helvetica Neue', sans-serif;
+        font-size: 3vw;
+        color: #fef5f2;
+      }
+
+      @media (max-width: 800px) {
+        body {
+          font-size: 5vw;
+        }
+      }
+
+      video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      .title {
+        position: relative;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .row {
+        display: flex;
+      }
+
+      .title img {
+        width: 50vw;
+        margin-bottom: 100px;
+      }
+
+      a {
+        color: inherit;
+        margin: 20px;
+        text-decoration: none;
+        opacity: .8;
+        transition: opacity .5s;
+      }
+
+      a:hover {
+        opacity: 1;
+      }
+
+      #right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        margin: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      #right img {
+        width: 30px;
+        height: 30px;
+      }
+
+    </style>
   </head>
   <body>
-    Hello!
+    <video class="background" loop muted autoplay preload="auto" poster="">
+      <source src="winterfuzz.mp4" type="video/mp4" />
+    </video>
+    <div class="title">
+      <img src="moneppoi.png"></img>
+      <div class="row">
+        <a href="https://open.spotify.com/album/68SUQWGhjjn4pOLGNl24V1?si=eCbIEmA7SW2IciI14DVVhg">listen</a> 
+        <a href="https://tinyletter.com/moneppo">subscribe</a> 
+      </div>
+    </div>
+    <!--<div id="right">
+      <a href="https://www.twitter.com/moneppo/">
+        <img src="twitter.svg"></img>
+      </a>
+      <a href="https://www.youtube.com/moneppo/">
+        <img src="youtube.svg"></img>
+      </a>
+    </div>-->
   </body>
 </html>
