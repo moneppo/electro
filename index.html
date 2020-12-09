@@ -22,13 +22,13 @@
         width: 100vw;
         height: 100vh;
         font-family: 'Josefin', 'Helvetica Neue', sans-serif;
-        font-size: 3vw;
+        font-size: 4vw;
         color: #fef5f2;
       }
 
       @media (max-width: 800px) {
         body {
-          font-size: 5vw;
+          font-size: 6vw;
         }
       }
 
@@ -81,16 +81,26 @@
         display: flex;
         flex-direction: row-reverse;
       }
-
+      
       #right img {
         width: 30px;
         height: 30px;
       }
 
+      #bottom {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        margin: 10px;
+        display: flex;
+        font-size: .5em;
+        flex-direction: row-reverse;
+      }
     </style>
   </head>
   <body>
-    <video class="background" loop muted autoplay playsinline preload="auto" poster="">
+    <video class="background" loop muted autoplay preload="auto" poster="">
       <source src="winterfuzz.mp4" type="video/mp4" />
     </video>
     <div class="title">
@@ -100,13 +110,8 @@
         <a href="https://tinyletter.com/moneppo">subscribe</a> 
       </div>
     </div>
-    <!--<div id="right">
-      <a href="https://www.twitter.com/moneppo/">
-        <img src="twitter.svg"></img>
-      </a>
-      <a href="https://www.youtube.com/moneppo/">
-        <img src="youtube.svg"></img>
-      </a>
-    </div>-->
+    <div id="bottom">
+      <a href="mailto:moneppo+contact@gmail.com">inquiries & booking</a>
+    </div>
   </body>
 </html>
